@@ -1,4 +1,4 @@
-OPTIMA GROWTH MICROSERVICE SYSTEM
+OPTIMA GROWTH MICROSERVICE SYSTEM (IN PROGRESS)
 ===============
 Based on the book **Microservices in Action** by **Pereira Paulo**
 
