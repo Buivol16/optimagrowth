@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  configserver:
+
+    image: ostock/configserver:0.0.1-PRE-ALPHA
+
+    ports:
+      - "8071:8071"
+
+    environment:
+      - "SPRING_PROFILES_ACTIVE=dev"
+
+    networks:
+      backend:
+        aliases:
+            - "configserver"
+
+networks:
+  backend:
+    driver: "bridge"
