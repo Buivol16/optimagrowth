@@ -2,11 +2,21 @@ spring:
   application:
     name: config-server
   profiles:
-    active: native
+    active:
+      - vault
   cloud:
     config:
       server:
         native:
           search-locations: classpath:/config
+        vault:
+          host: 127.0.0.1
+          port: 8200
+          kvVersion: 2
+          profileSeparator: "/"
+
 server:
   port: 8071
+
+encrypt:
+  key: secretkey
