@@ -1,0 +1,5 @@
+spring:
+  config:
+    import: configserver:http://configserver:8071
+  datasource:
+    url: jdbc:postgresql://databas:5432/ostock_dev
